@@ -1,0 +1,23 @@
+To validate the data, the program should check the expected weight of the bag,
+depending on coin type, aginst the bags inputted weight. the expected weight
+of the bag will be the weight of each singular coin, of a specific coin type,
+multiplied by the number of each coin needed to make up the expected value of
+a bag. For example, a bag of 2 pound coins should have a value of 20 pounds
+-so 10 coins- and the weight of each coin is 12g. so, the expected weight is
+120g.
+
+For inacurate weights I will assume that the bag will always be of the same
+type. To check by how many coins the bag is out the program will do:
+incorect bag weight / weight of each coin	
+--inorder to find the number of coins in the bag
+expected number of coins - actual number of coins 
+--to find the number of coins that shouldn't be there
+
+All inputed data should be writen and read from a text document
+for the coinCount.txt file, that contains all the user input data(name, total
+bags, accuracy), a list of dictionaries could be used because it is then
+explicitaly layed out in the text file on whow to be interpreted. this allows
+for a new volenteer to be apended onto the end and old ones to be updated.
+eg:
+[{name:"jake", total:10, correctBags:5, accuracy:"50%"},
+ {name:"bob", total 5:, correctBags:1, accuracy:"20%"}]
